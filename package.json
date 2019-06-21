@@ -2,7 +2,7 @@
   "name": "gulp-html-script",
   "version": "1.0.0",
   "description": "escape html or script file",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest"
   },
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/searchfe/gulp-html-script#readme",
   "devDependencies": {
+    "@types/gulp-util": "^3.0.34",
     "@types/jest": "^24.0.15",
     "del": "^4.1.1",
     "gulp": "^4.0.2",
@@ -27,7 +28,6 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "@types/gulp-util": "^3.0.34",
     "gulp-util": "^3.0.8",
     "through2": "^3.0.1"
   }
