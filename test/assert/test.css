@@ -1,0 +1,27 @@
+.under-searchbox {
+    margin: .06rem .16rem -.06rem;
+    padding-bottom: .1rem;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: left;
+    color: #999;
+}
+
+.under-sigma {
+    display: block !important;
+    margin: -.1rem .16rem 0 .16rem;
+    padding: .06rem 0 .04rem;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: left;
+    color: rgb(153, 153, 153);
+}
+
+
+.toptip-hintbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #999;
+}
+</style>

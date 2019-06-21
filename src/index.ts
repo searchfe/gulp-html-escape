@@ -2,7 +2,7 @@ import * as gutil from 'gulp-util';
 import * as through from 'through2';
 
 
-export function escapeString() {
+export function escapeString(type: string) {
     const PLUGIN_NAME = 'gulp-html-script';
 
     return through.obj(function(file, enc, cb) {
@@ -19,16 +19,19 @@ export function escapeString() {
         }
 
         if (file.isBuffer()) {
-            const content = escapeHtml(file.contents.toString());
-            file.contents = new Buffer(content);
+            const content = file.contents.toString();
+            file.contents = new Buffer(escapeHtml(content, type));
             this.push(file);
             cb();
         }
     }); 
 }
 
-function escapeHtml (str: string): string {
-    return str.replace(/<script|<\/script>/ig, function (str) {
+function escapeHtml (str: string, staticType: string): string {
+    let regexp = new RegExp(`<${staticType}|<\/${staticType}>`, 'ig');
+    return str.replace(regexp, function (str) {
         return '&lt;' + str.substring(1);
     });
 }
+
+
