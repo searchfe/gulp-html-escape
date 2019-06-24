@@ -1,5 +1,5 @@
 {
-  "name": "gulp-html-script",
+  "name": "gulp-html-escape",
   "version": "1.0.0",
   "description": "escape html or script file",
   "main": "dist/index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/searchfe/gulp-html-script.git"
+    "url": "git+https://github.com/searchfe/gulp-html-escape.git"
   },
   "author": "fanyurong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/searchfe/gulp-html-script/issues"
+    "url": "https://github.com/searchfe/gulp-html-escape/issues"
   },
-  "homepage": "https://github.com/searchfe/gulp-html-script#readme",
+  "homepage": "https://github.com/searchfe/gulp-html-escape#readme",
   "devDependencies": {
     "@types/gulp-util": "^3.0.34",
     "@types/jest": "^24.0.15",
