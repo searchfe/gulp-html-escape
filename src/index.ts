@@ -3,7 +3,7 @@ import * as through from 'through2';
 
 
 export function escapeString(type: string) {
-    const PLUGIN_NAME = 'gulp-html-script';
+    const PLUGIN_NAME = 'gulp-html-inline-escape';
 
     return through.obj(function(file, enc, cb) {
         // 如果文件为空，不做任何操作，转入下一个操作，即下一个 .pipe()
